@@ -1,0 +1,149 @@
+{
+  "error": {
+    "trello": "Trello falló "
+  },
+  "api": {
+    "add": "Tarjeta creada",
+    "form_step_two_exception": "Lista o tablero no proporcionado",
+    "configure": {
+      "config_failed": "No se puede enviar el formulario de configuración: Trello falló ",
+      "config_success": "Configuración de Trello actualizada con éxito"
+    },
+    "connect": {
+      "save": "Cuenta de Trello conectada correctamente!",
+      "disconnect_exception": "No estás conectado a una cuenta de Trello.",
+      "disconnect_success": "Cuenta de Trello desconectada con éxito!"
+    },
+    "help": {
+      "header": "Complemento Mattermost Trello - Ayuda con el comando Slash",
+      "command_help": "Inicie la sintaxis de ayuda de la línea de comandos del complemento de Trello, consulte la [documentación]({{ homepageUrl }}).",
+      "command_configure": "Configurar el espacio de trabajo de Trello",
+      "command_create_description": "Crear una nueva tarjeta",
+      "command_add_subcription": "Suscríbete al canal para recibir notificaciones de un tablero de Trello",
+      "command_list_subcription": "Mostrar todas sus suscripciones actuales",
+      "command_stop_subcription": "Dejar de recibir notificaciones del tablero de Trello",
+      "command_connect": "Inicie sesión en su cuenta de Trello",
+      "command_disconnect": "Sal de tu cuenta de Trello"
+    },
+    "install": {
+      "description": "Para terminar de configurar la aplicación Trello, lea la sección [Inicio rápido]({{ homepageUrl }}#quick-start) del LÉAME."
+    },
+    "subscription": {
+      "response_add": "Se creará la suscripción",
+      "response_remove": "Se eliminará la suscripción",
+      "response_get": "Lista de suscripciones: se encontraron {{ count }} suscripciones abiertas.",
+      "response_subcription": "- ID de suscripción: {{ id }} - {{ description }}"
+    },
+    "webhook": {
+      "error": "Error webhook: {{ error }}",
+      "card_moved": "Tarjeta movida {{ card }} (\"{{ board }}\" Junta)",
+      "board": "Tablero {{ name }}",
+      "text_moved": "La tarjeta \" {{ card }}\" se movió (de la lista \" {{ listBefore }}\" a la lista \"{{ listAfter }}\")",
+      "message_created": "Tarjeta creada \"{{ card }}\" (\"{{ board }}\" Junta)",
+      "text_created": "Se creó la tarjeta \"{{ card }}\" (en la lista \"{{ list }}\")"
+    }
+  },
+  "binding": {
+    "help": {
+      "description": "Mostrar ayuda de Trello",
+      "title": "Mostrar título de ayuda de Trello"
+    },
+    "get": {
+      "description": "Agregar una nueva tarjeta al tablero"
+    },
+    "create": {
+      "decription": "Agregar una nueva tarjeta al tablero",
+      "card_name": "Nombre de tarjeta",
+      "card_description": "Nombre de la tarjeta",
+      "board_name": "Nombre del tablero",
+      "board_description": "Nombre del tablero",
+      "list_name": "Lista de nombres",
+      "list_description": "Nombre de la lista"
+    },
+    "subscription": {
+      "get": "Suscríbete al canal actual a un tablero de Trello"
+    },
+    "add": {
+      "description": "Suscríbete al canal actual a un tablero de Trello",
+      "title": "Subscribe channel to Trello board",
+      "board_name": "Nombre del tablero",
+      "channel": "Canal"
+    },
+    "sub_list": {
+      "description": "Obtener una lista de los tableros de Trello suscritos al canal actual"
+    },
+    "remove": {
+      "description": "Eliminar suscripción del canal actual",
+      "title": "Darse de baja de las notificaciones del tablero de Trello",
+      "subcription": "ID de suscripción"
+    },
+    "configure": {
+      "description": "Configurar la cuenta de Trello instalada",
+      "title": "Mostrar título de ayuda de Trello"
+    },
+    "account": {
+      "description": "Configura tus credenciales de Trello",
+      "title": "Configura tus credenciales de Trello"
+    },
+    "disconnect": {
+      "description": "Elimina tus credenciales de Trello",
+      "title": "Elimina tus credenciales de Trello"
+    },
+    "bindings-descriptions": {
+      "bindings": "Administrar la App de Trello"
+    }
+  },
+  "forms": {
+    "card_add": {
+      "add_form": {
+        "step_exception_1": "No se realiza la configuración inicial.",
+        "step_exception_2": "Usted no se ha identificado."
+      },
+      "create": {
+        "label_card": "Nombre de tarjeta",
+        "description_card": "Nombre de la tarjeta",
+        "label_board": "Seleccionar tablero",
+        "label_select": "Seleccionar lista",
+        "extra_text": " No tienes tableros, pide ayuda a tu administrador",
+        "new_card": "Crear nueva tarjeta",
+        "header_card": "Rellena el formulario con los datos de la tarjeta."
+      },
+      "add": {
+        "list_not_found": "Lista {{ name }} no encontrada.",
+        "board_not_found": "Tablero {{ nombre }} no encontrado."
+      }
+    },
+    "connect": {
+      "label_token": "OAuth Token",
+      "hint_token": "token",
+      "description_token": "Para obtener su token [Siga este enlace]({{ url }})",
+      "title_trello": "Autorizar Trello",
+      "header_trello": "Proporcione su token OAuth de Trello.",
+      "user_summary": "resumen"
+    },
+    "subcription": {
+      "board_not_found": "Tablero no encontrado con el nombre \"{{ name }}\"",
+      "description": "Canal: {{ channel }} - Tablero: {{ board }}"
+    },
+    "config": {
+      "title": "Configurar Trello",
+      "header": "Configure la aplicación Trello con la siguiente información.",
+      "workspace": {
+        "label": "Espacio de trabajo",
+        "hint": "Ej. https://trello.com/tuEspacioDeTrabajo",
+        "description": "Espacio de trabajo de Trello, en `Ej. https://trello.com/tuEspacioDeTrabajo`, el espacio de trabajo sería `tuEspacioDeTrabajo`"
+      },
+      "apikey": {
+        "label": "Clave API",
+        "description": "Clave API de desarrollador obtenida de Trello https://trello.com/app-key"
+      },
+      "token": {
+        "label": "Token API",
+        "description": "Token de API de desarrollador obtenido de Trello https://trello.com/app-key"
+      },
+      "error": {
+        "system-admin": "Error: Este comando únicamente esta disponible para usuarios Mattermost System Admin"
+      }
+    }
+  }
+}
